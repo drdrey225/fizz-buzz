@@ -1,0 +1,249 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+header {
+   /* background-color: aquamarine; */
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+}
+
+#timeDisplay {
+   font-size: 1.3em;
+   font-weight: bold; 
+}
+
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-image: url(img/bg-1.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   font-family: 'Changa', sans-serif;
+}
+
+.herosection {
+   /* border: 1px solid red; */
+   display: flex;
+   height: 62vh;
+   width: 140vh;
+   border-radius: 25px;
+   box-shadow: 2px 2px 19px rgb(7, 7, 7);
+
+}
+
+.block-1 {
+   /* border: 1px solid rgb(41, 136, 41); */
+   width: 100%;
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   align-items: center;
+   flex-direction: column;
+}
+
+.block-1 h1 {
+   font-size: 1.9em;
+   text-align: center;
+}
+
+.block-1 p {
+   font-size: 20px;
+   text-align: center;
+}
+
+
+.block-2 {
+   /* border: 1px solid rgb(41, 136, 41); */
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+   width: 100%;
+   backdrop-filter: blur(10px);
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+.block-2 h1 {
+   font-size: 1.9em;
+   text-align: center;
+   color: rgb(6, 5, 5);
+}
+
+
+.block-2 p {
+   font-size: 20px;
+   text-align: center;
+}
+
+
+.input-box {
+   padding: 0;
+   width: 350px;
+   position: relative;
+   box-sizing: border-box;
+   border: 0px solid rgb(220, 13, 13);
+}
+
+.input-box input {
+   padding: 15px 45px;
+   outline: none;
+   border: none;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+
+.input-box button {
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
+   position: absolute;
+   padding: 15px 30px ;
+   cursor: pointer;
+   border: none;
+   /* font-weight: bold; */
+   transition: 1s ease;
+   background-color: rgb(12, 70, 54);
+   color: white;
+}
+
+.input-box button:hover {
+   transition: 1s ease;
+   background-color: rgb(83, 165, 138);
+   color: black;
+}
+
+#display {
+   color: rgb(184, 238, 238);
+   /* border: 1px solid red; */
+   padding: 10px 35px;
+   border-radius: 5px;
+   box-shadow: 1px 0px 10px rgb(7, 5, 5);
+}
+
+#displayFizBiz {
+   color: rgb(184, 238, 238);
+   /* border: 1px solid red; */
+   padding: 10px 35px;
+   border-radius: 5px;
+   box-shadow: 1px 0px 10px rgb(5, 3, 3);
+}
+
+
+
+
+@media screen and (max-width: 482px) {
+   .herosection {
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+         gap: 90px;
+         width: 370px;
+         box-shadow: 0px 0px 0px rgb(7, 7, 7);
+         margin-bottom: 170px;
+      }
+
+      .block-1 {
+         /* border: 1px solid rgb(41, 136, 41); */
+         width: 100%;
+         border-radius: 25px;
+         box-shadow: 1px 1px 20px black;
+         margin-top: 60px;
+      }
+
+      .block-2 {
+         /* border: 1px solid rgb(41, 136, 41); */
+         width: 100%;
+         backdrop-filter: blur(27px);
+         border-radius: 25px;
+         box-shadow: 1px 1px 20px black;
+      }
+
+
+      #timeDisplay {
+         font-size: 0.9em;
+         font-weight: 500;
+      }
+
+
+
+      header {
+         background-color: rgb(8, 123, 131);
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 40px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 99;
+      }
+
+      .block-2 h1 {
+         font-size: 1.9em;
+         text-align: center;
+         color: rgba(0, 10, 10, 0.966);
+      }
+
+      .block-1 p {
+       color: antiquewhite;
+       font-size: 13px;
+      }
+
+      .block-2 p {
+       color: antiquewhite;
+       font-size: 13px;
+      }
+
+      .input-box {
+         padding-left: 30px;
+      }
+
+
+      .input-box input {
+         padding: 10px 20px;
+
+      }
+   
+      .input-box button {
+         border-top-right-radius: 8px;
+         border-bottom-right-radius: 8px;
+         position: absolute;
+         padding: 10px 20px;
+         cursor: pointer;
+         border: none;
+         /* font-weight: bold; */
+         transition: 1s ease;
+         background-color: rgb(12, 70, 54);
+         color: white;
+      }
+      
+
+      #display {
+         margin-bottom: 20px;
+      }
+   
+      #displayFizBiz {
+         margin-bottom: 20px;
+      }
+}
